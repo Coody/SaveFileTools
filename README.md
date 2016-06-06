@@ -35,6 +35,10 @@ This class is build for easily manage, expand, and data encryption and check eas
 [[SaveFileToolsManager sharedInstance] loadWithKey:@"fileOne"];
 ```
 
+> 單純使用單一檔案存檔（不使用 SaveFileToolsManager 來處理存/讀檔檔案）
+0、將 SaveFileTools 資料夾內的 SaveFileTools 類別拷貝下來。
+1、繼承他，並且建立自己的 Model 。（可參考範例中 RemoteNotificationFileTool 這個類別）
+2、自行管理 SaveFileTools 。
 
 ### License
 
