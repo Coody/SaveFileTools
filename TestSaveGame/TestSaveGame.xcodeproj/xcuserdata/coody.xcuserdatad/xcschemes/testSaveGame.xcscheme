@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB7973AF1D02BE10003385FB"
-               BuildableName = "testSaveGame.app"
+               BuildableName = "TestSaveGame.temp_caseinsensitive_rename.app"
                BlueprintName = "testSaveGame"
-               ReferencedContainer = "container:testSaveGame.xcodeproj">
+               ReferencedContainer = "container:TestSaveGame.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB7973AF1D02BE10003385FB"
-            BuildableName = "testSaveGame.app"
+            BuildableName = "TestSaveGame.temp_caseinsensitive_rename.app"
             BlueprintName = "testSaveGame"
-            ReferencedContainer = "container:testSaveGame.xcodeproj">
+            ReferencedContainer = "container:TestSaveGame.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB7973AF1D02BE10003385FB"
-            BuildableName = "testSaveGame.app"
+            BuildableName = "TestSaveGame.temp_caseinsensitive_rename.app"
             BlueprintName = "testSaveGame"
-            ReferencedContainer = "container:testSaveGame.xcodeproj">
+            ReferencedContainer = "container:TestSaveGame.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB7973AF1D02BE10003385FB"
-            BuildableName = "testSaveGame.app"
+            BuildableName = "TestSaveGame.temp_caseinsensitive_rename.app"
             BlueprintName = "testSaveGame"
-            ReferencedContainer = "container:testSaveGame.xcodeproj">
+            ReferencedContainer = "container:TestSaveGame.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

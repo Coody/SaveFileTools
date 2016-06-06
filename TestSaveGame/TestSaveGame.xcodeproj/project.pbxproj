@@ -7,39 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5AA3BED61D03D43200D5687E /* RemoteNotificationFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA3BED11D03D43200D5687E /* RemoteNotificationFileTool.m */; };
-		5AA3BED71D03D43200D5687E /* SaveFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA3BED31D03D43200D5687E /* SaveFileTools.m */; };
-		5AA3BED81D03D43200D5687E /* SaveFileToolsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA3BED51D03D43200D5687E /* SaveFileToolsManager.m */; };
-		FB7973B51D02BE10003385FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7973B41D02BE10003385FB /* main.m */; };
-		FB7973B81D02BE10003385FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7973B71D02BE10003385FB /* AppDelegate.m */; };
-		FB7973BB1D02BE10003385FB /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7973BA1D02BE10003385FB /* GameScene.m */; };
-		FB7973BD1D02BE10003385FB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB7973BC1D02BE10003385FB /* GameScene.sks */; };
-		FB7973C01D02BE10003385FB /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7973BF1D02BE10003385FB /* GameViewController.m */; };
-		FB7973C31D02BE10003385FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7973C11D02BE10003385FB /* Main.storyboard */; };
-		FB7973C51D02BE10003385FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7973C41D02BE10003385FB /* Assets.xcassets */; };
-		FB7973C81D02BE10003385FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7973C61D02BE10003385FB /* LaunchScreen.storyboard */; };
+		FB62A5531D053FF3009075C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A53F1D053FF3009075C0 /* AppDelegate.m */; };
+		FB62A5541D053FF3009075C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB62A5401D053FF3009075C0 /* Assets.xcassets */; };
+		FB62A5551D053FF3009075C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB62A5411D053FF3009075C0 /* LaunchScreen.storyboard */; };
+		FB62A5561D053FF3009075C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB62A5431D053FF3009075C0 /* Main.storyboard */; };
+		FB62A5571D053FF3009075C0 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A5461D053FF3009075C0 /* GameScene.m */; };
+		FB62A5581D053FF3009075C0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB62A5471D053FF3009075C0 /* GameScene.sks */; };
+		FB62A5591D053FF3009075C0 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A5491D053FF3009075C0 /* GameViewController.m */; };
+		FB62A55A1D053FF3009075C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB62A54A1D053FF3009075C0 /* Info.plist */; };
+		FB62A55B1D053FF3009075C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A54B1D053FF3009075C0 /* main.m */; };
+		FB62A55C1D053FF3009075C0 /* RemoteNotificationFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A54D1D053FF3009075C0 /* RemoteNotificationFileTool.m */; };
+		FB62A55D1D053FF3009075C0 /* SaveFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A5501D053FF3009075C0 /* SaveFileTools.m */; };
+		FB62A55E1D053FF3009075C0 /* SaveFileToolsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A5521D053FF3009075C0 /* SaveFileToolsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5AA3BED01D03D43200D5687E /* RemoteNotificationFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteNotificationFileTool.h; sourceTree = "<group>"; };
-		5AA3BED11D03D43200D5687E /* RemoteNotificationFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteNotificationFileTool.m; sourceTree = "<group>"; };
-		5AA3BED21D03D43200D5687E /* SaveFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveFileTools.h; sourceTree = "<group>"; };
-		5AA3BED31D03D43200D5687E /* SaveFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveFileTools.m; sourceTree = "<group>"; };
-		5AA3BED41D03D43200D5687E /* SaveFileToolsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveFileToolsManager.h; sourceTree = "<group>"; };
-		5AA3BED51D03D43200D5687E /* SaveFileToolsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveFileToolsManager.m; sourceTree = "<group>"; };
+		FB62A53E1D053FF3009075C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB62A53F1D053FF3009075C0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB62A5401D053FF3009075C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB62A5421D053FF3009075C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB62A5441D053FF3009075C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB62A5451D053FF3009075C0 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		FB62A5461D053FF3009075C0 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		FB62A5471D053FF3009075C0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FB62A5481D053FF3009075C0 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		FB62A5491D053FF3009075C0 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		FB62A54A1D053FF3009075C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB62A54B1D053FF3009075C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB62A54C1D053FF3009075C0 /* RemoteNotificationFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteNotificationFileTool.h; sourceTree = "<group>"; };
+		FB62A54D1D053FF3009075C0 /* RemoteNotificationFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteNotificationFileTool.m; sourceTree = "<group>"; };
+		FB62A54F1D053FF3009075C0 /* SaveFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveFileTools.h; sourceTree = "<group>"; };
+		FB62A5501D053FF3009075C0 /* SaveFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveFileTools.m; sourceTree = "<group>"; };
+		FB62A5511D053FF3009075C0 /* SaveFileToolsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveFileToolsManager.h; sourceTree = "<group>"; };
+		FB62A5521D053FF3009075C0 /* SaveFileToolsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveFileToolsManager.m; sourceTree = "<group>"; };
 		FB7973B01D02BE10003385FB /* TestSaveGame.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSaveGame.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7973B41D02BE10003385FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FB7973B61D02BE10003385FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FB7973B71D02BE10003385FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB7973B91D02BE10003385FB /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		FB7973BA1D02BE10003385FB /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		FB7973BC1D02BE10003385FB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		FB7973BE1D02BE10003385FB /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		FB7973BF1D02BE10003385FB /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		FB7973C21D02BE10003385FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB7973C41D02BE10003385FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FB7973C71D02BE10003385FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FB7973C91D02BE10003385FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,15 +54,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5AA3BECF1D03D43200D5687E /* SaveFileTools */ = {
+		FB62A53D1D053FF3009075C0 /* testSaveGame */ = {
 			isa = PBXGroup;
 			children = (
-				5AA3BED01D03D43200D5687E /* RemoteNotificationFileTool.h */,
-				5AA3BED11D03D43200D5687E /* RemoteNotificationFileTool.m */,
-				5AA3BED21D03D43200D5687E /* SaveFileTools.h */,
-				5AA3BED31D03D43200D5687E /* SaveFileTools.m */,
-				5AA3BED41D03D43200D5687E /* SaveFileToolsManager.h */,
-				5AA3BED51D03D43200D5687E /* SaveFileToolsManager.m */,
+				FB62A54E1D053FF3009075C0 /* SaveFileTools */,
+				FB62A53E1D053FF3009075C0 /* AppDelegate.h */,
+				FB62A53F1D053FF3009075C0 /* AppDelegate.m */,
+				FB62A5401D053FF3009075C0 /* Assets.xcassets */,
+				FB62A5411D053FF3009075C0 /* LaunchScreen.storyboard */,
+				FB62A5431D053FF3009075C0 /* Main.storyboard */,
+				FB62A54C1D053FF3009075C0 /* RemoteNotificationFileTool.h */,
+				FB62A54D1D053FF3009075C0 /* RemoteNotificationFileTool.m */,
+				FB62A5451D053FF3009075C0 /* GameScene.h */,
+				FB62A5461D053FF3009075C0 /* GameScene.m */,
+				FB62A5471D053FF3009075C0 /* GameScene.sks */,
+				FB62A5481D053FF3009075C0 /* GameViewController.h */,
+				FB62A5491D053FF3009075C0 /* GameViewController.m */,
+				FB62A54A1D053FF3009075C0 /* Info.plist */,
+				FB62A54B1D053FF3009075C0 /* main.m */,
+			);
+			path = testSaveGame;
+			sourceTree = "<group>";
+		};
+		FB62A54E1D053FF3009075C0 /* SaveFileTools */ = {
+			isa = PBXGroup;
+			children = (
+				FB62A54F1D053FF3009075C0 /* SaveFileTools.h */,
+				FB62A5501D053FF3009075C0 /* SaveFileTools.m */,
+				FB62A5511D053FF3009075C0 /* SaveFileToolsManager.h */,
+				FB62A5521D053FF3009075C0 /* SaveFileToolsManager.m */,
 			);
 			path = SaveFileTools;
 			sourceTree = "<group>";
@@ -69,7 +90,7 @@
 		FB7973A71D02BE10003385FB = {
 			isa = PBXGroup;
 			children = (
-				FB7973B21D02BE10003385FB /* testSaveGame */,
+				FB62A53D1D053FF3009075C0 /* testSaveGame */,
 				FB7973B11D02BE10003385FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,34 +101,6 @@
 				FB7973B01D02BE10003385FB /* TestSaveGame.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FB7973B21D02BE10003385FB /* testSaveGame */ = {
-			isa = PBXGroup;
-			children = (
-				5AA3BECF1D03D43200D5687E /* SaveFileTools */,
-				FB7973B61D02BE10003385FB /* AppDelegate.h */,
-				FB7973B71D02BE10003385FB /* AppDelegate.m */,
-				FB7973B91D02BE10003385FB /* GameScene.h */,
-				FB7973BA1D02BE10003385FB /* GameScene.m */,
-				FB7973BC1D02BE10003385FB /* GameScene.sks */,
-				FB7973BE1D02BE10003385FB /* GameViewController.h */,
-				FB7973BF1D02BE10003385FB /* GameViewController.m */,
-				FB7973C11D02BE10003385FB /* Main.storyboard */,
-				FB7973C41D02BE10003385FB /* Assets.xcassets */,
-				FB7973C61D02BE10003385FB /* LaunchScreen.storyboard */,
-				FB7973C91D02BE10003385FB /* Info.plist */,
-				FB7973B31D02BE10003385FB /* Supporting Files */,
-			);
-			path = testSaveGame;
-			sourceTree = "<group>";
-		};
-		FB7973B31D02BE10003385FB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FB7973B41D02BE10003385FB /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +160,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7973BD1D02BE10003385FB /* GameScene.sks in Resources */,
-				FB7973C81D02BE10003385FB /* LaunchScreen.storyboard in Resources */,
-				FB7973C51D02BE10003385FB /* Assets.xcassets in Resources */,
-				FB7973C31D02BE10003385FB /* Main.storyboard in Resources */,
+				FB62A5581D053FF3009075C0 /* GameScene.sks in Resources */,
+				FB62A5561D053FF3009075C0 /* Main.storyboard in Resources */,
+				FB62A5541D053FF3009075C0 /* Assets.xcassets in Resources */,
+				FB62A55A1D053FF3009075C0 /* Info.plist in Resources */,
+				FB62A5551D053FF3009075C0 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,33 +175,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7973C01D02BE10003385FB /* GameViewController.m in Sources */,
-				5AA3BED81D03D43200D5687E /* SaveFileToolsManager.m in Sources */,
-				FB7973B81D02BE10003385FB /* AppDelegate.m in Sources */,
-				5AA3BED71D03D43200D5687E /* SaveFileTools.m in Sources */,
-				FB7973BB1D02BE10003385FB /* GameScene.m in Sources */,
-				FB7973B51D02BE10003385FB /* main.m in Sources */,
-				5AA3BED61D03D43200D5687E /* RemoteNotificationFileTool.m in Sources */,
+				FB62A5571D053FF3009075C0 /* GameScene.m in Sources */,
+				FB62A55E1D053FF3009075C0 /* SaveFileToolsManager.m in Sources */,
+				FB62A5591D053FF3009075C0 /* GameViewController.m in Sources */,
+				FB62A55D1D053FF3009075C0 /* SaveFileTools.m in Sources */,
+				FB62A55B1D053FF3009075C0 /* main.m in Sources */,
+				FB62A5531D053FF3009075C0 /* AppDelegate.m in Sources */,
+				FB62A55C1D053FF3009075C0 /* RemoteNotificationFileTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB7973C11D02BE10003385FB /* Main.storyboard */ = {
+		FB62A5411D053FF3009075C0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB7973C21D02BE10003385FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FB7973C61D02BE10003385FB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB7973C71D02BE10003385FB /* Base */,
+				FB62A5421D053FF3009075C0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB62A5431D053FF3009075C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB62A5441D053FF3009075C0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
