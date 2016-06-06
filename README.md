@@ -13,21 +13,22 @@ This class is build for easily manage, expand, and data encryption and check eas
 
 >推薦用法（使用 SaveFileToolsManager 來管理存檔群）
 
-1. 建立一個客製化的 SaveFileTools 、以及裡面自己建立一個你要的 Model （包含你想要的 property）
-2. 使用 SaveFileToolsManager 初始化路徑，並且給他一個你要的存檔路徑。
+1、建立一個客製化的 SaveFileTools 、以及裡面自己建立一個你要的 Model （包含你想要的 property）
+
+2、使用 SaveFileToolsManager 初始化路徑，並且給他一個你要的存檔路徑。
 ```
 [[SaveFileToolsManager sharedInstance] initialFilePath:@"test/TestSaveFile"];
 ```
-3. 初始化你的客製化存檔類別，直接傳入類別名稱、以及你整個檔案的存檔名稱（必須獨一無二）
+3、初始化你的客製化存檔類別，直接傳入類別名稱、以及你整個檔案的存檔名稱（必須獨一無二）
 ```
 [[SaveFileToolsManager sharedInstance] initialSaveFileToolsWithClassNameArray:@[@"RemoteNotificationFileTool"]       
                                                                       withKey:@"fileOne"];
 ```
-4. 存檔
+4、存檔
 ```
 [[SaveFileToolsManager sharedInstance] saveWithKey:@"fileOne"];
 ```
-5. 讀檔
+5、讀檔
 ```
 [[SaveFileToolsManager sharedInstance] loadWithKey:@"fileOne"];
 ```
