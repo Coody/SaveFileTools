@@ -13,7 +13,9 @@ This class is build for easily manage, expand, and data encryption and check eas
 
 >推薦用法（使用 SaveFileToolsManager 來管理存檔群）
 
-1、建立一個客製化的 SaveFileTools 、以及裡面自己建立一個你要的 Model （包含你想要的 property）
+0、將 SaveFileTools 資料夾內的類別複製到您的專案。
+
+1、建立一個客製化的 SaveFileTools 、以及裡面自己建立一個你要的 Model （裡面包含你想要的 property）。
 
 2、使用 SaveFileToolsManager 初始化路徑，並且給他一個你要的存檔路徑。
 ```
