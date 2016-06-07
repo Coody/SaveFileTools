@@ -10,6 +10,7 @@
 
 #import "SaveFileTools.h"
 #import "SaveFileToolsManager.h"
+#import "RemoteNotificationFileTool.h"
 
 @implementation GameScene
 
@@ -27,13 +28,15 @@
     [[SaveFileToolsManager sharedInstance] initialFilePath:@"test/TestSaveFile"];
     [[SaveFileToolsManager sharedInstance] initialSaveFileToolsWithClassNameArray:@[@"RemoteNotificationFileTool"]
                                                                           withKey:@"fileOne"];
+    [[SaveFileToolsManager sharedInstance] loadWithKey:@"fileOne"];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     NSLog(@"點擊！");
-    [[SaveFileToolsManager sharedInstance] saveWithKey:@"fileOne"];
     
-    [[SaveFileToolsManager sharedInstance] loadWithKey:@"fileOne"];
+    RemoteNotificationFileTool *test = [[SaveFileToolsManager sharedInstance] getSaveFileToolsWithName:@"RemoteNotificationFileTool"];
+    RemoteNotificationFileTool_Model *model = test.Model;
+    NSLog(@" %@ , %@" , test , model);
 }
 
 -(void)update:(CFTimeInterval)currentTime {
