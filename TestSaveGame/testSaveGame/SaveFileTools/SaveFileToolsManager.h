@@ -42,7 +42,7 @@ extern NSString *const K_SAVE_FILE_FOLDER_NAME;
  */
 -(void)initialFilePath:(nullable NSString *)tempFilePath;
 
-/**
+/**opl
  *  initial SaveFile system , add an array with custom SaveFileTools class name using NSString.
  *
  *  @param tempArray Your custom SaveFileTools name using NSString
@@ -75,9 +75,9 @@ extern NSString *const K_SAVE_FILE_FOLDER_NAME;
 
 #pragma mark - Get SaveFileTools
 // TODO:
--(nullable SaveFileTools *)getSaveFileToolsWithName:(nonnull NSString *)tempSaveFileToolsName;
+-(nullable id <SaveFileTools_Policy>)getSaveFileToolsWithName:(nonnull NSString *)tempSaveFileToolsName;
 
 // TODO:
--(nullable SaveFileTools *)getSaveFileToolsWithIndex:(NSUInteger)index;
+-(nullable id <SaveFileTools_Policy>)getSaveFileToolsWithIndex:(NSUInteger)index;
 
 @end
