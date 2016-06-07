@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol SaveFileTools_Policy;
+@class SaveFileTools;
 
 /**  */
 extern NSString *const K_SAVE_FILE_PATH_PREFIX;
@@ -19,7 +20,7 @@ extern NSString *const K_SAVE_FILE_FOLDER_NAME;
 /**
  *  This manager is an easy way to manage your all kinds of custom SaveFileTools objects. 
     
-    SaveFileTools is a save file class that you can use it to save file and you can inherit it and create your own SaveFileTools object.
+    SaveFileTools is a save file class that you can use it to save file and you can inherit it and create your own SaveFileTools object and your custom model.
  
     Example: If you create a game and you have three kinds of data like "player data", "Map data", "Albumn data" wanna to save. You can create three kinds of custom SaveFileTools and create your own Model class in your custom SaveFileTools and save it in Model property. SaveFileToolsManager can organize them and manage them easily.
     
@@ -61,26 +62,22 @@ extern NSString *const K_SAVE_FILE_FOLDER_NAME;
 -(BOOL)loadWithKey:(nonnull NSString *)tempKey;
 
 // TODO:
--(BOOL)saveWithKey:(nonnull NSString *)tempKey
-withSaveFileToolsName:(NSString *)tempSaveFileToolsName;
+-(BOOL)saveAssignSaveToolWithName:(nonnull NSString *)tempSaveFileToolsName;
 
 // TODO:
--(BOOL)loadWithKey:(nonnull NSString *)tempKey
-withSaveFileToolsName:(NSString *)tempSaveFileToolsName;
+-(BOOL)loadAssignSaveToolWithName:(nonnull NSString *)tempSaveFileToolsName;
 
 // TODO:
--(BOOL)saveWithKey:(nonnull NSString *)tempKey
-withSaveFileToolsIndex:(NSUInteger)index;
+-(BOOL)saveAssignSaveToolWithIndex:(NSUInteger)index;
 
 // TODO:
--(BOOL)loadWithKey:(nonnull NSString *)tempKey
-withSaveFileToolsIndex:(NSUInteger)index;
+-(BOOL)loadAssignSaveToolWithIndex:(NSUInteger)index;
 
-#pragm mark - Get SaveFileTools
+#pragma mark - Get SaveFileTools
 // TODO:
--(SaveFileTools *)getSaveFileToolsWithName:(NSString *)tempSaveFileToolsName;
+-(nullable SaveFileTools *)getSaveFileToolsWithName:(nonnull NSString *)tempSaveFileToolsName;
 
 // TODO:
--(SaveFileTools *)getSaveFileToolsWithIndex:(NSUInteger)index;
+-(nullable SaveFileTools *)getSaveFileToolsWithIndex:(NSUInteger)index;
 
 @end

@@ -46,6 +46,8 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
     return self;
 }
 
+#pragma mark - 開放方法
+#pragma mark : 初始化(initial)
 -(void)initialFilePath:(NSString *)tempFilePath{
     
     static BOOL hasAlreadySet = NO;
@@ -117,6 +119,7 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
     }
 }
 
+#pragma mark : 儲存(save)
 -(BOOL)saveWithKey:(nonnull NSString *)tempKey{
     BOOL isOK = NO;
     // 如果有檔案，這裡照樣存，由外面自行控制有檔案的時候該詢問使用者是否要覆蓋，而不是這裡做。
@@ -158,13 +161,38 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
     return isOK;
 }
 
+#pragma mark : 單筆儲存(save with assign SaveFileTool)
+// TODO:
+-(BOOL)saveAssignSaveToolWithName:(nonnull NSString *)tempSaveFileToolsName{
+    BOOL isOK = NO;
+    return isOK;
+}
+
+// TODO:
+-(BOOL)loadAssignSaveToolWithName:(nonnull NSString *)tempSaveFileToolsName{
+    BOOL isOK = NO;
+    return isOK;
+}
+
+// TODO:
+-(BOOL)saveAssignSaveToolWithIndex:(NSUInteger)index{
+    BOOL isOK = NO;
+    return isOK;
+}
+
+// TODO:
+-(BOOL)loadAssignSaveToolWithIndex:(NSUInteger)index{
+    BOOL isOK = NO;
+    return isOK;
+}
+
 #pragma mark - 私有方法
 -(NSArray *)saveFileToolsArray{
-    return [_saveFileToolsDic allValues];
+    return [_saveFileToolsDic objectForKey:_fileFolderName];
 }
 
 -(NSString *)totalFilePath{
-    [self setFilePath:@""];
+    [self initialFilePath:@""];
     return _totalFilePath;
 }
 
