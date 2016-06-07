@@ -165,6 +165,7 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
 // TODO:
 -(BOOL)saveAssignSaveToolWithName:(nonnull NSString *)tempSaveFileToolsName{
     BOOL isOK = NO;
+    
     return isOK;
 }
 
@@ -184,6 +185,26 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
 -(BOOL)loadAssignSaveToolWithIndex:(NSUInteger)index{
     BOOL isOK = NO;
     return isOK;
+}
+
+// TODO:
+-(nullable id <SaveFileTools_Policy>)getSaveFileToolsWithName:(nonnull NSString *)tempSaveFileToolsName{
+    NSArray<SaveFileTools_Policy> *saveFileToolArray = [_saveFileToolsDic objectForKey:_fileFolderName];
+    id <SaveFileTools_Policy> saveFileTool;
+    for ( id <SaveFileTools_Policy> unit in saveFileToolArray ) {
+        if ( [NSStringFromClass([unit class]) isEqualToString:tempSaveFileToolsName] ) {
+            saveFileTool = unit;
+            break;
+        }
+    }
+    return saveFileTool;
+}
+
+// TODO:
+-(nullable id <SaveFileTools_Policy>)getSaveFileToolsWithIndex:(NSUInteger)index{
+    NSArray<SaveFileTools_Policy> *saveFileToolArray = [_saveFileToolsDic objectForKey:_fileFolderName];
+    id <SaveFileTools_Policy> saveFileTool = [saveFileToolArray objectAtIndex:index];
+    return saveFileTool;
 }
 
 #pragma mark - 私有方法
