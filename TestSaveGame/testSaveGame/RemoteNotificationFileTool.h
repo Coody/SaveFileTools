@@ -25,19 +25,11 @@
 @end
 
 @interface RemoteNotificationFileTool : SaveFileTools <SaveFileTools_Policy>
-/**
- * 存檔的辨識名稱（初始化後不可改）
- */
-@property (nonnull , nonatomic , readonly) NSString *fileIdentify; 
 
 /**
  * 存入您要的 Model object
  * warning - 請一定要去實作 NSCoding 的 protocol
  */
-@property (nonnull , nonatomic , strong) RemoteNotificationFileTool_Model <NSCoding> *Model;
+@property (nonnull , nonatomic , strong) RemoteNotificationFileTool_Model <NSCoding> *saveModel;
 
-/**
- * 存檔位置路徑
- */
-@property (nonnull , nonatomic , readonly) NSString *saveFilePath;
 @end
