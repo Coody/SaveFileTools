@@ -37,12 +37,20 @@
 -(instancetype)initWithIdentifier:(NSString *)tempIdentifier withPath:(NSString *)tempPath{
     self = [super initWithIdentifier:tempIdentifier withPath:tempPath];
     if (self) {
-        self.Model = [[RemoteNotificationFileTool_Model alloc] init];
-        self.Model.cer = @"test";
-        self.Model.cer_path = @"test2";
-        self.Model.number = 9876;
+        self.saveModel = [[RemoteNotificationFileTool_Model alloc] init];
+        self.saveModel.cer = @"test";
+        self.saveModel.cer_path = @"test2";
+        self.saveModel.number = 9876;
     }
     return self;
+}
+
+-(RemoteNotificationFileTool_Model<NSCoding> *)saveModel{
+    return (RemoteNotificationFileTool_Model *)self.Model;
+}
+
+-(void)setSaveModel:(RemoteNotificationFileTool_Model<NSCoding> *)saveModel{
+    self.Model = saveModel;
 }
 
 @end
