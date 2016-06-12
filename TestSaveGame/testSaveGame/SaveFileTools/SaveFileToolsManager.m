@@ -39,7 +39,7 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
     if ( self ) {
         _saveFileToolsDic = [[NSMutableDictionary alloc] init];
         // 預設為 App 本身的 main bundlePath 加上 /SaveFiles
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); 
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         _documentsDirectory = [paths objectAtIndex:0];
         _totalFilePath = [NSString stringWithFormat:@"%@/%@" , _documentsDirectory , K_SAVE_FILE_FOLDER_NAME ];
     }
@@ -69,9 +69,9 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
         NSError *error;
         if ( ![[NSFileManager defaultManager] fileExistsAtPath:_totalFilePath] ) {
             
-            [[NSFileManager defaultManager] createDirectoryAtPath:_totalFilePath 
-                                      withIntermediateDirectories:YES 
-                                                       attributes:nil 
+            [[NSFileManager defaultManager] createDirectoryAtPath:_totalFilePath
+                                      withIntermediateDirectories:YES
+                                                       attributes:nil
                                                             error:&error];
         }
         if ( error ) {
@@ -96,15 +96,15 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
     NSError *error;
     if ( ![[NSFileManager defaultManager] fileExistsAtPath:allPath] ) {
         
-        [[NSFileManager defaultManager] createDirectoryAtPath:allPath 
-                                  withIntermediateDirectories:YES 
-                                                   attributes:nil 
+        [[NSFileManager defaultManager] createDirectoryAtPath:allPath
+                                  withIntermediateDirectories:YES
+                                                   attributes:nil
                                                         error:&error];
     }
     
     // 建立使用者所要的 SaveFileTools
     for ( NSString *unit in tempArray ) {
-        id unitSaveFileTools = [[NSClassFromString(unit) alloc] initWithIdentifier:[NSString stringWithFormat:@"%@%@" , K_SAVE_FILE_PATH_PREFIX , unit] 
+        id unitSaveFileTools = [[NSClassFromString(unit) alloc] initWithIdentifier:[NSString stringWithFormat:@"%@%@" , K_SAVE_FILE_PATH_PREFIX , unit]
                                                                           withPath:allPath];
         [classArray addObject:unitSaveFileTools];
     }
@@ -161,33 +161,104 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
     return isOK;
 }
 
-#pragma mark : 單筆儲存(save with assign SaveFileTool)
+#pragma mark : 單筆儲存指定 SaveFileTools 存檔 (save with assign SaveFileTool)
 // TODO:
 -(BOOL)saveAssignSaveToolWithName:(nonnull NSString *)tempSaveFileToolsName{
     BOOL isOK = NO;
-    
+    // 如果有檔案，這裡照樣存，由外面自行控制有檔案的時候該詢問使用者是否要覆蓋，而不是這裡做。
+    NSArray *saveFileToolsArray = [_saveFileToolsDic objectForKey:_fileFolderName];
+    if ( saveFileToolsArray != nil ) {
+        for ( SaveFileTools <SaveFileTools_Policy> *unit in saveFileToolsArray ) {
+            if ( [NSStringFromClass([unit class]) isEqualToString:tempSaveFileToolsName] ) {
+                if ( [unit save] ) {
+                    isOK = YES;
+                    break;
+                }
+                else{
+                    NSLog(@"Fail to save file: %@" , unit.saveFilePath );
+                    isOK = NO;
+                    break;
+                }
+            }
+        }
+    }
     return isOK;
 }
 
 // TODO:
 -(BOOL)loadAssignSaveToolWithName:(nonnull NSString *)tempSaveFileToolsName{
     BOOL isOK = NO;
+    // 如果有檔案，這裡照樣存，由外面自行控制有檔案的時候該詢問使用者是否要覆蓋，而不是這裡做。
+    NSArray *saveFileToolsArray = [_saveFileToolsDic objectForKey:_fileFolderName];
+    if ( saveFileToolsArray != nil ) {
+        for ( SaveFileTools <SaveFileTools_Policy> *unit in saveFileToolsArray ) {
+            if ( [NSStringFromClass([unit class]) isEqualToString:tempSaveFileToolsName] ) {
+                if ( [unit load] ) {
+                    isOK = YES;
+                    break;
+                }
+                else{
+                    NSLog(@"Fail to load file: %@" , unit.saveFilePath );
+                    isOK = NO;
+                    break;
+                }
+            }
+        }
+    }
     return isOK;
 }
 
 // TODO:
 -(BOOL)saveAssignSaveToolWithIndex:(NSUInteger)index{
     BOOL isOK = NO;
+    
+    // 用檔案名稱 key 取得目前的檔案。
+    NSArray *saveFileToolsArray = [_saveFileToolsDic objectForKey:_fileFolderName];
+    if ( saveFileToolsArray != nil ) {
+        
+        SaveFileTools <SaveFileTools_Policy> *unit = [saveFileToolsArray objectAtIndex:index];
+        
+        if ( unit != nil ) {
+            if ( [unit save] ) {
+                isOK = YES;
+            }
+            else{
+                NSLog(@"Fail to save file: %@" , unit.saveFilePath );
+                isOK = NO;
+            }
+        }
+        else{
+            NSLog(@"File ont exist at index :%d !" , (int)index );
+        }
+    }
     return isOK;
 }
 
 // TODO:
 -(BOOL)loadAssignSaveToolWithIndex:(NSUInteger)index{
     BOOL isOK = NO;
+    // 用檔案名稱 key 取得目前的檔案。
+    NSArray *saveFileToolsArray = [_saveFileToolsDic objectForKey:_fileFolderName];
+    if ( saveFileToolsArray != nil ) {
+        
+        SaveFileTools <SaveFileTools_Policy> *unit = [saveFileToolsArray objectAtIndex:index];
+        
+        if ( unit != nil ) {
+            if ( [unit load] ) {
+                isOK = YES;
+            }
+            else{
+                NSLog(@"Fail to load file: %@" , unit.saveFilePath );
+                isOK = NO;
+            }
+        }
+        else{
+            NSLog(@"File ont exist at index :%d !" , (int)index );
+        }
+    }
     return isOK;
 }
 
-// TODO:
 -(nullable id <SaveFileTools_Policy>)getSaveFileToolsWithName:(nonnull NSString *)tempSaveFileToolsName{
     NSArray<SaveFileTools_Policy> *saveFileToolArray = [_saveFileToolsDic objectForKey:_fileFolderName];
     id <SaveFileTools_Policy> saveFileTool;
@@ -200,7 +271,6 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
     return saveFileTool;
 }
 
-// TODO:
 -(nullable id <SaveFileTools_Policy>)getSaveFileToolsWithIndex:(NSUInteger)index{
     NSArray<SaveFileTools_Policy> *saveFileToolArray = [_saveFileToolsDic objectForKey:_fileFolderName];
     id <SaveFileTools_Policy> saveFileTool = [saveFileToolArray objectAtIndex:index];
