@@ -34,7 +34,7 @@
  * 存入您要的 Model object
  * warning - 請一定要去實作 NSCoding 的 protocol
  */
-@property (nonnull , nonatomic , strong) RemoteNotificationFileTool_Model <NSCoding> *Model;
+@property (nonnull , nonatomic , strong) RemoteNotificationFileTool_Model <NSCoding> *resulModel;
 
 /**
  * 存檔位置路徑
