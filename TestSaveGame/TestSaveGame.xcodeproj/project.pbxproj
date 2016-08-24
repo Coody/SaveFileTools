@@ -17,8 +17,8 @@
 		FB62A55A1D053FF3009075C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB62A54A1D053FF3009075C0 /* Info.plist */; };
 		FB62A55B1D053FF3009075C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A54B1D053FF3009075C0 /* main.m */; };
 		FB62A55C1D053FF3009075C0 /* RemoteNotificationFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A54D1D053FF3009075C0 /* RemoteNotificationFileTool.m */; };
-		FB62A55D1D053FF3009075C0 /* SaveFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A5501D053FF3009075C0 /* SaveFileTools.m */; };
-		FB62A55E1D053FF3009075C0 /* SaveFileToolsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A5521D053FF3009075C0 /* SaveFileToolsManager.m */; };
+		FBAC336A1D6D43DD00DBA7C7 /* SaveFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC33671D6D43DD00DBA7C7 /* SaveFileTools.m */; };
+		FBAC336B1D6D43DD00DBA7C7 /* SaveFileToolsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC33691D6D43DD00DBA7C7 /* SaveFileToolsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,11 +36,11 @@
 		FB62A54B1D053FF3009075C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB62A54C1D053FF3009075C0 /* RemoteNotificationFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteNotificationFileTool.h; sourceTree = "<group>"; };
 		FB62A54D1D053FF3009075C0 /* RemoteNotificationFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteNotificationFileTool.m; sourceTree = "<group>"; };
-		FB62A54F1D053FF3009075C0 /* SaveFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveFileTools.h; sourceTree = "<group>"; };
-		FB62A5501D053FF3009075C0 /* SaveFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveFileTools.m; sourceTree = "<group>"; };
-		FB62A5511D053FF3009075C0 /* SaveFileToolsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveFileToolsManager.h; sourceTree = "<group>"; };
-		FB62A5521D053FF3009075C0 /* SaveFileToolsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveFileToolsManager.m; sourceTree = "<group>"; };
 		FB7973B01D02BE10003385FB /* TestSaveGame.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSaveGame.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAC33661D6D43DD00DBA7C7 /* SaveFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveFileTools.h; sourceTree = "<group>"; };
+		FBAC33671D6D43DD00DBA7C7 /* SaveFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveFileTools.m; sourceTree = "<group>"; };
+		FBAC33681D6D43DD00DBA7C7 /* SaveFileToolsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveFileToolsManager.h; sourceTree = "<group>"; };
+		FBAC33691D6D43DD00DBA7C7 /* SaveFileToolsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveFileToolsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,6 @@
 		FB62A53D1D053FF3009075C0 /* testSaveGame */ = {
 			isa = PBXGroup;
 			children = (
-				FB62A54E1D053FF3009075C0 /* SaveFileTools */,
 				FB62A53E1D053FF3009075C0 /* AppDelegate.h */,
 				FB62A53F1D053FF3009075C0 /* AppDelegate.m */,
 				FB62A5401D053FF3009075C0 /* Assets.xcassets */,
@@ -76,20 +75,10 @@
 			path = testSaveGame;
 			sourceTree = "<group>";
 		};
-		FB62A54E1D053FF3009075C0 /* SaveFileTools */ = {
-			isa = PBXGroup;
-			children = (
-				FB62A54F1D053FF3009075C0 /* SaveFileTools.h */,
-				FB62A5501D053FF3009075C0 /* SaveFileTools.m */,
-				FB62A5511D053FF3009075C0 /* SaveFileToolsManager.h */,
-				FB62A5521D053FF3009075C0 /* SaveFileToolsManager.m */,
-			);
-			path = SaveFileTools;
-			sourceTree = "<group>";
-		};
 		FB7973A71D02BE10003385FB = {
 			isa = PBXGroup;
 			children = (
+				FBAC33651D6D43DD00DBA7C7 /* SaveFileTools */,
 				FB62A53D1D053FF3009075C0 /* testSaveGame */,
 				FB7973B11D02BE10003385FB /* Products */,
 			);
@@ -101,6 +90,18 @@
 				FB7973B01D02BE10003385FB /* TestSaveGame.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FBAC33651D6D43DD00DBA7C7 /* SaveFileTools */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC33661D6D43DD00DBA7C7 /* SaveFileTools.h */,
+				FBAC33671D6D43DD00DBA7C7 /* SaveFileTools.m */,
+				FBAC33681D6D43DD00DBA7C7 /* SaveFileToolsManager.h */,
+				FBAC33691D6D43DD00DBA7C7 /* SaveFileToolsManager.m */,
+			);
+			name = SaveFileTools;
+			path = ../SaveFileTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB62A5571D053FF3009075C0 /* GameScene.m in Sources */,
-				FB62A55E1D053FF3009075C0 /* SaveFileToolsManager.m in Sources */,
+				FBAC336B1D6D43DD00DBA7C7 /* SaveFileToolsManager.m in Sources */,
 				FB62A5591D053FF3009075C0 /* GameViewController.m in Sources */,
-				FB62A55D1D053FF3009075C0 /* SaveFileTools.m in Sources */,
+				FBAC336A1D6D43DD00DBA7C7 /* SaveFileTools.m in Sources */,
 				FB62A55B1D053FF3009075C0 /* main.m in Sources */,
 				FB62A5531D053FF3009075C0 /* AppDelegate.m in Sources */,
 				FB62A55C1D053FF3009075C0 /* RemoteNotificationFileTool.m in Sources */,
