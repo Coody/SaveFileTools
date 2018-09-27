@@ -259,6 +259,7 @@ NSString *const K_SAVE_FILE_FOLDER_NAME = @"SaveFiles";
     return isOK;
 }
 
+// FIXME: 這裡要改成不相同類別也可以存在（使用私自類別的定義 key 來分辨）
 -(nullable id <SaveFileTools_Policy>)getSaveFileToolsWithName:(nonnull NSString *)tempSaveFileToolsName{
     NSArray<SaveFileTools_Policy> *saveFileToolArray = [_saveFileToolsDic objectForKey:_fileFolderName];
     id <SaveFileTools_Policy> saveFileTool;
