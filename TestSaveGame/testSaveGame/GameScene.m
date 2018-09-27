@@ -28,6 +28,10 @@
     [[SaveFileToolsManager sharedInstance] initialFilePath:@"test/TestSaveFile"];
     [[SaveFileToolsManager sharedInstance] initialSaveFileToolsWithClassNameArray:@[@"RemoteNotificationFileTool"]
                                                                           withKey:@"fileOne"];
+    
+    
+    
+    
     [[SaveFileToolsManager sharedInstance] loadWithKey:@"fileOne"];
 }
 
@@ -36,7 +40,15 @@
     
     RemoteNotificationFileTool *test = [[SaveFileToolsManager sharedInstance] getSaveFileToolsWithName:@"RemoteNotificationFileTool"];
     RemoteNotificationFileTool_Model *model = test.Model;
+    
+    model.cer = @"CoodyTest";
+    model.cer_path = @"abc/1123/coody";
+    model.number = -123;
+    
     NSLog(@" %@ , %@" , test , model);
+    
+    
+    [[SaveFileToolsManager sharedInstance] saveWithKey:@"fileOne"];
 }
 
 -(void)update:(CFTimeInterval)currentTime {

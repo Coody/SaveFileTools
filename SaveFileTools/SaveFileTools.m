@@ -14,7 +14,7 @@
  * 初始化，帶入此存檔系統的辨識碼
  */
 -(nonnull instancetype)initWithIdentifier:(nonnull NSString *)tempIdentifier 
-                                 withPath:(NSString *)tempPath{
+                                 withPath:(nonnull NSString *)tempPath{
     self = [super init];
     if ( self ) {
         

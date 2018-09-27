@@ -14,7 +14,6 @@
 		FB62A5571D053FF3009075C0 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A5461D053FF3009075C0 /* GameScene.m */; };
 		FB62A5581D053FF3009075C0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB62A5471D053FF3009075C0 /* GameScene.sks */; };
 		FB62A5591D053FF3009075C0 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A5491D053FF3009075C0 /* GameViewController.m */; };
-		FB62A55A1D053FF3009075C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB62A54A1D053FF3009075C0 /* Info.plist */; };
 		FB62A55B1D053FF3009075C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A54B1D053FF3009075C0 /* main.m */; };
 		FB62A55C1D053FF3009075C0 /* RemoteNotificationFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62A54D1D053FF3009075C0 /* RemoteNotificationFileTool.m */; };
 		FBAC336A1D6D43DD00DBA7C7 /* SaveFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC33671D6D43DD00DBA7C7 /* SaveFileTools.m */; };
@@ -135,6 +134,7 @@
 				TargetAttributes = {
 					FB7973AF1D02BE10003385FB = {
 						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -164,7 +164,6 @@
 				FB62A5581D053FF3009075C0 /* GameScene.sks in Resources */,
 				FB62A5561D053FF3009075C0 /* Main.storyboard in Resources */,
 				FB62A5541D053FF3009075C0 /* Assets.xcassets in Resources */,
-				FB62A55A1D053FF3009075C0 /* Info.plist in Resources */,
 				FB62A5551D053FF3009075C0 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,10 +293,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = testSaveGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.testSaveGame";
 				PRODUCT_NAME = TestSaveGame.temp_caseinsensitive_rename;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -305,10 +307,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = testSaveGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.testSaveGame";
 				PRODUCT_NAME = TestSaveGame.temp_caseinsensitive_rename;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
